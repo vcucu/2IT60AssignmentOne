@@ -1,20 +1,14 @@
 
 
-
-$(document).ready(function() => {
-    $(".jumbotron").on("mouseenter", () => {
-    	$(this).fadeIn();
+$(document).ready(function() {
+  
+	const $titlePic = $('#title-pic');
+  	$titlePic.show("slow")
+	
+	$('.card').on('mouseenter', () => {
+    	$(this).addClass('card-active');
+  	}).on('mouseleave', function() {
+    	$(this).removeClass('card-active');
   	});
 
-  	$("card").on({
-		mouseenter: function(){
-        $(this).css("background-color", "lightgray");
-    }, 
-    mouseleave: function(){
-        $(this).css("background-color", "white");
-    }, 
-
-  });
-
 });
-
