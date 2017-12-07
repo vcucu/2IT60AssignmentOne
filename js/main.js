@@ -4,9 +4,9 @@ $(document).ready(function() {
 
 
 	$('.card').on('mouseenter', () => {
-    	$(this).addClass('card-active');
+    	$(event.currentTarget).addClass('card-active');
   	}).on('mouseleave', function() {
-    	$(this).removeClass('card-active');
+    	$(event.currentTarget).removeClass('card-active');
   	});
 
 });
